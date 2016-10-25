@@ -4,7 +4,7 @@ steps:
   build-prj:
     type: build
     description: e2e use case
-    image-name: shevchikivan/hellow-world
+    image-name: shevchikivan/hello-world
     dockerfile: Dockerfile
     tag: latest
 
