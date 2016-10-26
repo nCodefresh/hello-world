@@ -4,7 +4,7 @@ steps:
   build-prj:
     type: build
     description: e2e use case
-    image-name: shevchikivan/hello-world
+    image-name: codefreshio/hello-world
     dockerfile: Dockerfile
     tag: latest
 
@@ -13,7 +13,7 @@ steps:
     description: Free text description
     candidate: ${{build-prj}}
     tag: ${{CF_BRANCH}}
-    registry: AKIAJOWZS37TIODARAJQ.dkr.ecr.us-east-1.amazonaws.com
+    registry: ${{REGISTRY_URL}}
     credentials:
       username: ${{AWS_ACCESS_KEY_ID}}
       password: ${{AWS_SECRET_ACCESS_KEY}}
