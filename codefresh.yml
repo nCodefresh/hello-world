@@ -13,7 +13,7 @@ steps:
     description: Free text description
     candidate: ${{build-prj}}
     tag: ${{CF_BRANCH}}
-    registry: ${{AWS_REGISTRY}}
+    registry: AKIAJOWZS37TIODARAJQ.dkr.ecr.us-east-1.amazonaws.com
     credentials:
       username: ${{AWS_ACCESS_KEY_ID}}
       password: ${{AWS_SECRET_ACCESS_KEY}}
